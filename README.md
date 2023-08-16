@@ -46,7 +46,7 @@ The result will be:
 ```ruby
 [
   {title: "A", content: "a", user_name: "あ"},
-    {title: "B", content: "b", user_name: "い"}
+  {title: "B", content: "b", user_name: "い"}
 ]
 ```
 
