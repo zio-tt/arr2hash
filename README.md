@@ -38,7 +38,7 @@ array = [
   ["B", "b", "い"]
 ]
 
-      result = Arr2hash.a_to_hash(array)
+result = Arr2hash.a_to_hash(array)
 ```
 
 The result will be:
