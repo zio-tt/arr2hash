@@ -1,24 +1,54 @@
-# Arr2hash
+rr2hash
 
-TODO: Delete this and the text below, and describe your gem
+This README and the corresponding gem were created with the help of ChatGPT by OpenAI.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/arr2hash`. To experiment with that code, run `bin/console` for an interactive prompt.
+## Overview
+
+`arr2hash` is a Ruby gem that provides a simple way to convert a two-dimensional array into an array of hashes. The first sub-array is treated as the keys, and the subsequent sub-arrays are treated as the values.
 
 ## Installation
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
+Add this line to your application's Gemfile:
 
-Install the gem and add to the application's Gemfile by executing:
+```ruby
+gem 'arr2hash'
+```
 
-    $ bundle add UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
+And then execute;
 
-If bundler is not being used to manage dependencies, install the gem by executing:
+```ruby
+bundle install
+```
 
-    $ gem install UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
+Or install it yourself as:
+
+```ruby
+gem install arr2hash
+```
 
 ## Usage
+Using `arr2hash` is straightforward. Simply call the `a_to_hash` method on a two-dimensional array as shown below:
 
-TODO: Write usage instructions here
+```ruby
+require "arr2hash"
+
+array = [
+  ["title", "content", "user_name"],
+    ["A", "a", "あ"],
+      ["B", "b", "い"]
+      ]
+
+      result = Arr2hash.a_to_hash(array)
+```
+
+The result will be:
+
+```ruby
+[
+  {title: "A", content: "a", user_name: "あ"},
+    {title: "B", content: "b", user_name: "い"}
+]
+```
 
 ## Development
 
@@ -28,4 +58,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/arr2hash.
+Bug reports and pull requests are welcome on GitHub at [https://github.com/zio-tt/arr2hash](https://github.com/zio-tt/arr2hash).
