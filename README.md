@@ -1,4 +1,4 @@
-rr2hash
+Arr2hash
 
 This README and the corresponding gem were created with the help of ChatGPT by OpenAI.
 
