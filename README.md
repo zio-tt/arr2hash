@@ -34,9 +34,9 @@ require "arr2hash"
 
 array = [
   ["title", "content", "user_name"],
-    ["A", "a", "あ"],
-      ["B", "b", "い"]
-      ]
+  ["A", "a", "あ"],
+  ["B", "b", "い"]
+]
 
       result = Arr2hash.a_to_hash(array)
 ```
